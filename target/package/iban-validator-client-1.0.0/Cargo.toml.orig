@@ -1,0 +1,18 @@
+[package]
+name = "iban-validator-client"
+version = "1.0.0"
+edition = "2021"
+description = "Official high-speed Rust client for Global IBAN, BIC/SWIFT & Bank Routing Validator API via RapidAPI Hub"
+readme = "README.md"
+authors = ["RapidAPI Microservices Portfolio"]
+license = "MIT"
+repository = "https://github.com/DrMkdaddy/iban-validator-rust"
+homepage = "https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/global-iban-bic-swift-bank-routing-validator-api"
+documentation = "https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/global-iban-bic-swift-bank-routing-validator-api"
+keywords = ["iban-validator", "rapidapi", "sdk", "validation", "api"]
+categories = ["api-bindings", "web-programming::http-client"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls-native-roots", "blocking"] }
